@@ -50,3 +50,6 @@
 .icon-whatsapp:before {
   content: "\64";
 }
+.icon-menu:before {
+  content: "\65";
+}
