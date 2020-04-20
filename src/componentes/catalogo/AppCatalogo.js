@@ -3,6 +3,10 @@ import React, {Component} from 'react';
 
 import Buscador from './Buscador'
 import Resultado from './Resultado'
+
+import Header from '../menu/Header'
+import Banner from '../menu/Banner'
+import Footer from '../footer/Footer'
 class AppCatalogo extends Component {
   
   constructor(){
@@ -66,25 +70,30 @@ class AppCatalogo extends Component {
 
   render(){
     return (
-      <div className="app container">
-        <div className="jumbotron barra-buscador">
-          <p className="lead text-center">
-            Buscador de Imágenes
-          </p>
-          <Buscador 
-          datosBusqueda={this.datosBusqueda}
-          />
-  
-          <div className="row justify-content-center">
-            <Resultado 
-            imagenes={this.state.imagenes} 
-            paginaAnterior={this.paginaAnterior}
-            paginaSiguiente={this.paginaSiguiente}
+      <>
+      <Header/>
+      <Banner/>
+        <div className="app container">
+          <div className="jumbotron barra-buscador">
+            <p className="lead text-center">
+              Buscador de Imágenes
+            </p>
+            <Buscador 
+            datosBusqueda={this.datosBusqueda}
             />
+    
+            <div className="row justify-content-center">
+              <Resultado 
+              imagenes={this.state.imagenes} 
+              paginaAnterior={this.paginaAnterior}
+              paginaSiguiente={this.paginaSiguiente}
+              />
+            </div>
+            
           </div>
-          
         </div>
-      </div>
+      <Footer/>
+      </>
     );
   }
 }
