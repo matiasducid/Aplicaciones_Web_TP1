@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
-import Buscador from './componentes/Buscador'
-import Resultado from './componentes/Resultado'
+import Buscador from './Buscador'
+import Resultado from './Resultado'
 class AppCatalogo extends Component {
   
   constructor(){
@@ -33,8 +33,8 @@ class AppCatalogo extends Component {
     }
     
   }
-  paginaSiguiente = () => {
-   
+  
+  paginaSiguiente = () => {   
     console.log("paginaSiguiente");
     let pagina= this.state.pagina; //leer el state de la pagina actual 
     pagina++; //sumar uno a la pagina actual
@@ -67,28 +67,6 @@ class AppCatalogo extends Component {
   render(){
     return (
       <div className="app container">
-
-        <header className="header">
-            <div className="contenedor">
-                <h1 className="logo"> Nobelie</h1>
-                <span className="icon-menu" id="btn-menu"></span>
-                <nav className="nav" id="nav">
-                    <ul className="menu">
-                        <li className="menu__item"><a href="index.html" className="menu__link select">Inicio</a></li>
-                        <li className="menu__item"><a href="" className="menu__link">Catalago</a></li>
-                        <li className="menu__item"><a href="carrito.html" className="menu__link">Carrito</a></li>
-                        <li className="menu__item"><a href="" className="menu__link">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-      </header>
-      <div className="banner">
-        <img src="img/banner.jpg" alt="" className="banner_img"/>
-        <div className="contenedor">
-            <h2 className="banner__titulo">La mejor muebleria a tu alcance</h2>
-            <p className="banner__txt">Armá tu hogar con nosotros y alcanzá el hogar de tus sueños</p>
-        </div>
-      </div> 
         <div className="jumbotron barra-buscador">
           <p className="lead text-center">
             Buscador de Imágenes
