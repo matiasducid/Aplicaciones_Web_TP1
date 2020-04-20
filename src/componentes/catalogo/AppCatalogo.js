@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+//import './App.css';
 
 import Buscador from './Buscador'
 import Resultado from './Resultado'

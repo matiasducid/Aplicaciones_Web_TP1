@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+
+//Llamo a los componentes
+import Home from './componentes/home/Home'
+import Catalogo from './componentes/catalogo/AppCatalogo'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+  <div>
+   <Switch>
+
+      {/* Páginas */}
+      <Route exact path='/' component={Home} />
+      <Route path='/catalogo' component={Catalogo} />
+     </Switch>
+  </div>
+ </Router>,
   document.getElementById('root')
 );
 
