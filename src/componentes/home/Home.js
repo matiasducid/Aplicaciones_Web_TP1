@@ -3,6 +3,9 @@ import Header from '../menu/Header.js';
 import Banner from '../menu/Banner.js';
 import Footer from '../footer/Footer.js';
 
+//import './Home.css'
+//import '../Responsive.css'
+
 class Home extends React.Component {
 
 	render() {

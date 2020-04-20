@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-//import './App.css';
+//import './AppCatalogo.css';
+//import '../Responsive.css'
 
 import Buscador from './Buscador'
 import Resultado from './Resultado'
