@@ -1,0 +1,21 @@
+/* Estilos del Banner*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000; /*pone la imagen atras*/
+    margin-bottom: 20px;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /*para que este totalmente centrado*/
+    width: 100%;
+    color: #000;
+    text-align: center;
+}
+
+.banner__txt{
+    display: none; /*en el movil no se ve*/
+}

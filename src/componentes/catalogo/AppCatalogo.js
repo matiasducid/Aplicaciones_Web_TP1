@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import './AppCatalogo.css';
+import './AppCatalogo.css';
 //import '../Responsive.css'
 
 import Buscador from './Buscador'
