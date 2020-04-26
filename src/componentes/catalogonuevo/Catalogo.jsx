@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Grid} from 'semantic-ui-react'
-import Menu from './Filtros'
+import Menu from './Filtros/Filtros'
 import ProductosEnCatalogo from './ProductosEnCatalogo'
 import ProductosEnCarrito from './ProductosEnCarrito'
 import Compra from './Compra'

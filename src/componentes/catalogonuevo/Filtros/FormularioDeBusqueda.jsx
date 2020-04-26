@@ -1,5 +1,6 @@
 import React from 'react'
 import { Input } from 'semantic-ui-react'
+import AppBar from "@material-ui/core/AppBar";
 
 function FormDeBusqueda (props) {
     return(

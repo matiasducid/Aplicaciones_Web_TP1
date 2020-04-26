@@ -3,7 +3,7 @@ import { Feed } from 'semantic-ui-react'
 
 
 //funcion que renderiza el carro con los productos y el precio
-function Cart(props){
+function Carrito(props){
   return(
     <Feed>
       <Feed.Event>
@@ -19,4 +19,4 @@ function Cart(props){
   )
 }
 
-export default Cart;
+export default Carrito;
