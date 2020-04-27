@@ -1,3 +1,9 @@
 .root {
   margin-top: 40px;
+  margin-left: 520px;
+  background-color: brown;
+}
+
+.container {
+  background-color: brown
 }

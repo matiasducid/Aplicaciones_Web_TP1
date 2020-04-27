@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Grid} from 'semantic-ui-react'
-import Menu from './Filtros/Filtros'
 import ProductosEnCatalogo from './ProductosEnCatalogo'
 import ProductosEnCarrito from './ProductosEnCarrito'
 import Compra from './Compra'
@@ -230,14 +229,18 @@ class Catalogo extends Component {
       )
     }
   }
+x
 
   render() {
-    return (
-      <Container className={style.root}>
-        <HeaderMuebleria/>
-        <Banner/>
-        <Menu/>
-        <Grid>
+    const divStyle = {
+      background: '#DDB9B9',
+    };
+    return (      
+      <>
+      <HeaderMuebleria/>
+      <Banner/>
+      <Container style={style.root}>
+        <Grid style={divStyle}>
           <Grid.Column width={12}>
             <ProductosEnCatalogo
               products={this.state.products}
@@ -254,9 +257,10 @@ class Catalogo extends Component {
             />
             {this.renderCompraAbierta()}
           </Grid.Column>
-        </Grid>
-        <Footer/>
+        </Grid>      
       </Container>
+      <Footer/>
+      </>
     )
   }
 }
