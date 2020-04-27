@@ -5,6 +5,7 @@ import ProductosEnCatalogo from './ProductosEnCatalogo'
 import ProductosEnCarrito from './ProductosEnCarrito'
 import Compra from './Compra'
 import HeaderMuebleria from '../menu/Header'
+import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import style from './App.css'
 
@@ -19,101 +20,101 @@ class Catalogo extends Component {
       products: [
         {
           id: 1,
-          name: 'Sillon rinconero cleopatra 3 cuerpos con puff',
+          nombre: 'Sillon rinconero cleopatra 3 cuerpos con puff',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/16b1-e5bfca62d9f5c58c7615132912837842-320-0.jpg',
-          price: 53887.89,
-          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          precio: 53887.89,
+          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
           marca: 'Corfa',
           stock: 5,
         },
         {
           id: 2,
-          name: 'Futon Jimmy Amarillo',
+          nombre: 'Futon Jimmy Amarillo',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/pi13656-889252-yellow5-d8e138590df90e31d615336571207705-320-0.jpg',
-          price: 13938.20,
-          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          precio: 13938.20,
+          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
           marca: 'Soyere',
           stock: 6,
         },
         {
           id: 3,
-          name: 'Mesa Mykonos rectangular',
+          nombre: 'Mesa Mykonos rectangular',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/mesa-mykonos1-a89a907071cea801c615351243853395-320-0.png',
-          price: 24725,
-          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          precio: 24725,
+          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
           marca: 'Fujifilim',
           stock: 2,
         },
         {
           id: 4,
-          name: 'Respaldo Ottilia',
+          nombre: 'Respaldo Ottilia',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/produto-133_cabeceira_cc-alamo1-9346c668590e2f9b7d15253511322857-320-0.png',
-          price: 10000,
-          datails: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
+          precio: 10000,
+          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
           marca: 'Canyio',
           stock: 6,
         },
         {
           id: 5,
-          name: 'Desayunador Firenze ',
+          nombre: 'Desayunador Firenze ',
           imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2020/04/FIRENZE.jpg',
-          price: 3285,
+          precio: 3285,
           marca: 'Amazon',
           stock: 10,
         },
         {
           id: 6,
-          name: 'Leila Banqueta',
+          nombre: 'Leila Banqueta',
           imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2018/10/LEILA-BANQUETA.jpg',
-          price: 27333,
+          precio: 27333,
           marca: 'Olympus',
           stock: 4,
         },
         {
           id: 7,
-          name: 'Sofa Cama',
+          nombre: 'Sofa Cama',
           imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/ODENSE1_4baef199-b9f6-44a1-90a6-e85de3894da1_700x.jpg?v=1568221467',
-          price: 32000,
+          precio: 32000,
           marca: 'Odense',
           stock: 2,
         },
         {
           id: 8,
-          name: 'Esquinero ',
+          nombre: 'Esquinero ',
           imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/JACKSON_ESQ_700x.jpg?v=1568051926',
-          price: 62190,
+          precio: 62190,
           marca: 'Jackson',
           stock: 4,
         },
         {
           id: 9,
-          name: 'Sofa 1 cuerpo',
+          nombre: 'Sofa 1 cuerpo',
           imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/JUANA_1_CPO_700x.jpg?v=1575924615',
-          price: 50399,
+          precio: 50399,
           marca: 'Juana',
           stock: 3,
         },
         {
           id: 10,
-          name: 'Comoda',
+          nombre: 'Comoda',
           imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2019/07/COMODA-DL-250.jpg',
-          price: 15200,
+          precio: 15200,
           marca: 'DL250',
           stock: 4,
         },
         {
           id: 11,
-          name: 'Juego de dormitorio',
+          nombre: 'Juego de dormitorio',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/juego-dormitorio-portofino-nogal-42447b691892da200414699122547155-1024-10241-4951650e766a5fc2c015132928286779-320-0.jpg',
-          price: 86789,
+          precio: 86789,
           marca: 'Olympus',
           stock: 3,
         },
         {
           id: 12,
-          name: 'Mesa Ratona ',
+          nombre: 'Mesa Ratona ',
           imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/28e38da2d811d0ec1bbe6e403a672a360e5b127ffbc53ec225pimgpsh_fullsize_distr1-2b6062abf428f691c115132936255208-320-0.jpg',
-          price: 32699,
+          precio: 32699,
           marca: 'Narbona',
           stock: 10,
         }
@@ -151,7 +152,7 @@ class Catalogo extends Component {
   handlerAgregarProducto(indexCarrito, indexProducto){
     var copiaState = Object.assign({}, this.state);
     if (copiaState.products[indexProducto].stock !== 0) {
-      copiaState.carrito[indexCarrito].total += copiaState.carrito[indexCarrito].price
+      copiaState.carrito[indexCarrito].total += copiaState.carrito[indexCarrito].precio
       copiaState.carrito[indexCarrito].cantidad += 1
       copiaState.products[indexProducto].stock -= 1
       this.setState(copiaState)
@@ -169,17 +170,17 @@ class Catalogo extends Component {
     let indexCarrito = this.state.carrito.findIndex(x => x.id === carrito.id)
 
     var copiaState = Object.assign({}, this.state);
-    if(copiaState.carrito[indexCarrito].total === copiaState.carrito[indexCarrito].price ){
+    if(copiaState.carrito[indexCarrito].total === copiaState.carrito[indexCarrito].precio ){
       indexCarrito !== -1 && copiaState.carrito.splice( indexCarrito, 1 );
       copiaState.products[indexProducto].stock += 1
       this.setState(copiaState)
       alert('El producto se quito del carrito de compras')
     } else {
-      copiaState.carrito[indexCarrito].total -= copiaState.carrito[indexCarrito].price
+      copiaState.carrito[indexCarrito].total -= copiaState.carrito[indexCarrito].precio
       copiaState.products[indexProducto].stock += 1
       copiaState.carrito[indexCarrito].cantidad -= 1
       copiaState.total -= 1
-      copiaState.sum -= copiaState.carrito[indexCarrito].price
+      copiaState.sum -= copiaState.carrito[indexCarrito].precio
       this.setState(copiaState)
     }
   }
@@ -191,11 +192,11 @@ class Catalogo extends Component {
 
     var productoCarrrito = {
       id: producto.id,
-      name: producto.name,
+      nombre: producto.nombre,
       img: producto.imagen,
-      price: producto.price,
+      precio: producto.precio,
       cantidad: 1,
-      total: producto.price
+      total: producto.precio
     }
     //verifico si el producto esta o no en el carrito
     var existe = this.state.carrito.find(elemProducto => elemProducto.id === productId)
@@ -254,6 +255,7 @@ class Catalogo extends Component {
             {this.renderCompraAbierta()}
           </Grid.Column>
         </Grid>
+        <Footer/>
       </Container>
     )
   }

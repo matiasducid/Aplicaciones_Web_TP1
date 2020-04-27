@@ -9,7 +9,7 @@ function Carrito(props){
       <Feed.Event>
         <Feed.Label image={props.img} />
         <Feed.Content>
-          <Feed.Date content={props.name} />
+          <Feed.Date content={props.nombre} />
           <Feed.Summary>
             $ {props.total} ({props.cantidad} productos)
           </Feed.Summary>

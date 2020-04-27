@@ -1,6 +1,6 @@
 import React from 'react'
 import { Segment, Grid } from 'semantic-ui-react'
-import Product from './Producto'
+import Producto from './Producto'
 
 //funcion que renderiza todo el catalogo
 function ProductosEnCatalogo(props) {
@@ -11,11 +11,11 @@ function ProductosEnCatalogo(props) {
           {props.products.map(p => {
             return (
               <Grid.Column key={p.id}>
-                <Product
+                <Producto
                   key={p.id}
-                  name={p.name}
+                  nombre={p.nombre}
                   imagen={p.imagen}
-                  price={p.price}
+                  precio={p.precio}
                   marca={p.marca}
                   stock={p.stock}
                   enGuardarProducto={() => props.enGuardarProducto(p.id)}

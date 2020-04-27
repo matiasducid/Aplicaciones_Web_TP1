@@ -35,34 +35,34 @@ class Home extends React.Component {
                             <p className="info__txt">Ea dolor quos ipsa unde, est repudiandae, beatae labore sit a aliquid autem? Ipsam, natus.</p>
                         </article>
                     </section> 
-                    <section className="cursos">
+                    <section className="productos">
                         <h2 className="section__titulo">Nuestros productos</h2>
-                        <div className="cursos__columna">
-                            <img src="img/img8.jpg" alt="" className="cursos__img"/>
-                            <div className="cursos__descripcion">
-                                <h3 className="cursos_titulo">Productos en Oferta</h3>
-                                <p className="cursos__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, id.</p>
+                        <div className="productos__columna">
+                            <img src="img/img8.jpg" alt="" className="productos__img"/>
+                            <div className="productos__descripcion">
+                                <h3 className="productos_titulo">Productos en Oferta</h3>
+                                <p className="productos__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, id.</p>
                             </div>
                         </div>
-                        <div className="cursos__columna">
-                            <img src="img/img9.jpg" alt="" className="cursos__img"/>
-                            <div className="cursos__descripcion">
-                                <h3 className="cursos_titulo">Productos mas vendidos</h3>
-                                <p className="cursos__txt">Quae dolore adipisci vel ratione iste saepe voluptatem praesentium eligendi.</p>
+                        <div className="productos__columna">
+                            <img src="img/img9.jpg" alt="" className="productos__img"/>
+                            <div className="productos__descripcion">
+                                <h3 className="productos_titulo">Productos mas vendidos</h3>
+                                <p className="productos__txt">Quae dolore adipisci vel ratione iste saepe voluptatem praesentium eligendi.</p>
                             </div>
                         </div>
-                        <div className="cursos__columna">
-                            <img src="img/img5.jpg" alt="" className="cursos__img"/>
-                            <div className="cursos__descripcion">
-                                <h3 className="cursos_titulo">Productos destacados</h3>
-                                <p className="cursos__txt">Facere iste itaque repudiandae ullam quia molestiae provident accusamus illum?</p>
+                        <div className="productos__columna">
+                            <img src="img/img5.jpg" alt="" className="productos__img"/>
+                            <div className="productos__descripcion">
+                                <h3 className="productos_titulo">Productos destacados</h3>
+                                <p className="productos__txt">Facere iste itaque repudiandae ullam quia molestiae provident accusamus illum?</p>
                             </div>
                         </div>
-                        <div className="cursos__columna">
-                            <img src="img/garantia.jpg" alt="" className="cursos__img"/>
-                            <div className="cursos__descripcion">
-                                <h3 className="cursos_titulo">Productos Outside</h3>
-                                <p className="cursos__txt">Ex earum odit magni? Hic magnam porro repudiandae nisi et.</p>
+                        <div className="productos__columna">
+                            <img src="img/garantia.jpg" alt="" className="productos__img"/>
+                            <div className="productos__descripcion">
+                                <h3 className="productos_titulo">Productos Outside</h3>
+                                <p className="productos__txt">Ex earum odit magni? Hic magnam porro repudiandae nisi et.</p>
                             </div>
                         </div>
                     </section>

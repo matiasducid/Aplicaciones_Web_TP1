@@ -136,12 +136,12 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
 }
 
 /*Estilos del curso*/
-.cursos__columna{
+.productos__columna{
     position: relative;
     margin-bottom: 30px;
 }
 
-.cursos__descripcion{
+.productos__descripcion{
     position: absolute;
     top: 0;
     left: 0;
@@ -152,12 +152,13 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
     padding: 5px;
 }
 
-.cursos_titulo{
+.productos_titulo{
     font-size: 25px;
     margin: 5px 0;
+    color: #ffffff;
 }
 
-.cursos__img {
+.productos__img {
     width: 100%;
 }
 
@@ -200,7 +201,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
         margin: 5px 0;
     }
 
-    .info, .cursos{
+    .info, .productos{
         display: flex;
         justify-content: space-between;
         margin-top: -80px;
@@ -215,7 +216,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
         margin: 5px 0;
     }
 
-    .cursos{
+    .productos{
         flex-wrap: wrap;
         margin-top: 0;
     }
@@ -225,7 +226,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
         color: #DDB9B9;
     }
 
-    .cursos__columna{
+    .productos__columna{
         width: 48%;
     }
 
@@ -242,7 +243,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
     .banner__titulo {
       font-size: 50px;
     }
-    .cursos__titulo {
+    .productos__titulo {
       font-size: 40px;
     }
 }
@@ -291,13 +292,13 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
       font-size: 40px;
       text-align: center;
     }
-    .cursos__descripcion {
+    .productos__descripcion {
       padding: 20px;
     }
-    .cursos__titulo {
+    .productos__titulo {
       font-size: 50px;
     }
-    .cursos__txt {
+    .productos__txt {
       font-size: 20px;
     }
   }

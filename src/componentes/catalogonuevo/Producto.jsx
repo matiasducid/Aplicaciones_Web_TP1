@@ -8,9 +8,9 @@ function Producto(props) {
     <Card style={{ marginTop: 15 }}>
       <Image size="small" src={props.imagen}  />
       <Card.Content>
-        <Card.Header style={{fontSize: 15}}>{props.name}</Card.Header>
+        <Card.Header style={{fontSize: 15}}>{props.nombre}</Card.Header>
         <Card.Meta>
-          <Formato number={props.price}/>
+          <Formato number={props.precio}/>
         </Card.Meta>
         <Card.Description>
           <Label>{props.marca}</Label>

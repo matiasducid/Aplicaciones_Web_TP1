@@ -1,5 +1,5 @@
 import React from 'react'
-import Format from './FormatearNumero'
+import Formato from './FormatearNumero'
 import { Card, Statistic, Button } from 'semantic-ui-react'
 
 //funcion que representa al usuario comprando (haciendo pago)
@@ -10,7 +10,7 @@ function Compra(props) {
       <Card.Content extra>
         <Statistic size='mini'>
           <Statistic.Value>
-            <Format number={props.sum}/>
+            <Formato number={props.sum}/>
           </Statistic.Value>
         </Statistic>
         <Button

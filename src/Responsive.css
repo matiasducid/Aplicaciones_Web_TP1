@@ -15,7 +15,7 @@
         margin: 5px 0;
     }
 
-    .info, .cursos{
+    .info, .productos{
         display: flex;
         justify-content: space-between;
         margin-top: -80px;
@@ -30,7 +30,7 @@
         margin: 5px 0;
     }
 
-    .cursos{
+    .productos{
         flex-wrap: wrap;
         margin-top: 0;
     }
@@ -40,7 +40,7 @@
         color: #DDB9B9;
     }
 
-    .cursos__columna{
+    .productos__columna{
         width: 48%;
     }
 
@@ -57,7 +57,7 @@
     .banner__titulo {
       font-size: 50px;
     }
-    .cursos__titulo {
+    .productos__titulo {
       font-size: 40px;
     }
 }
@@ -106,13 +106,13 @@
       font-size: 40px;
       text-align: center;
     }
-    .cursos__descripcion {
+    .productos__descripcion {
       padding: 20px;
     }
-    .cursos__titulo {
+    .productos__titulo {
       font-size: 50px;
     }
-    .cursos__txt {
+    .productos__txt {
       font-size: 20px;
     }
   }

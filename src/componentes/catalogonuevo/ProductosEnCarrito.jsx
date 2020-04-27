@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Card, Icon, Button} from 'semantic-ui-react'
 
-import Cart from './Carrito'
+import Carrito from './Carrito'
 
 //clase que representa a todos los productos que estan en el carrito
 
@@ -23,10 +23,10 @@ class ProductosEnCarrito extends Component {
         {this.props.items.map(p => {
           return (
             
-          <Cart
+          <Carrito
             key={p.id}
             img={p.img}
-            name={p.name}
+            nombre={p.nombre}
             total={p.total}
             cantidad={p.cantidad}
           />

@@ -11,6 +11,7 @@ const Footer = () => {
             <a href="https://www.instagram.com" className="icon-instagrem" target="_blank" ></a>
             <a href="" className="icon-whatsapp"></a>
         </div>
+        <br/>
         <p className="copy">&copy; Nobelie 2020 - Ningun derecho reservado</p>
     </footer>
     )
