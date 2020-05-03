@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink, withRouter}  from 'react-router-dom'
 class Header extends React.Component {
+    //esto es algo que estaba probando
     getNavLinkClass = (path) => {
         return this.props.location.pathname === path ? 'active' : '';
     }
@@ -22,7 +23,7 @@ class Header extends React.Component {
                             <NavLink to="" className="menu__link">Carrito </NavLink>
                         </li>
                         <li className="menu__item">
-                            <NavLink to="" className="menu__link">Nosotros </NavLink>
+                            <NavLink to="" className="menu__link">Usuario </NavLink>
                         </li>
                     </ul>
                 </nav>
