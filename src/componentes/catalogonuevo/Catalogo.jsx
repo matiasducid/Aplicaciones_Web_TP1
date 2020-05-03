@@ -14,8 +14,8 @@ class Catalogo extends Component {
     super(props)
     this.state = {
       compraAbierta: false,
-      total: 0, //total de la compra
-      sum: 0,   //total de la suma de un mismo producto
+      total: 0, //total de la suma de un mismo producto
+      sum: 0,   //total de la compra
       products: prodJson,
       carrito: [],
     }
@@ -152,6 +152,7 @@ x
             <ProductosEnCarrito
               items={this.state.carrito}
               total={this.state.total}
+              sum = {this.state.sum}
               enCompraAbierta={this.handlerCompraAbierta}
               enQuitarProducto={this.handlerQuitarProducto}
               enIncrementarProducto={this.handleGuardarProducto}

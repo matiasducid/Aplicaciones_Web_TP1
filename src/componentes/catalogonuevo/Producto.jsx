@@ -1,5 +1,4 @@
 import React from 'react'
-import Formato from './FormatearNumero'
 import { Card, Image, Label, Button } from 'semantic-ui-react'
 
 //Funcion que renderiza cada producto en la pantalla
@@ -10,7 +9,7 @@ function Producto(props) {
       <Card.Content>
         <Card.Header style={{fontSize: 15}}>{props.nombre}</Card.Header>
         <Card.Meta>
-          <Formato number={props.precio}/>
+          <p>${props.precio}</p>
         </Card.Meta>
         <Card.Description>
           <Label>{props.marca}</Label>

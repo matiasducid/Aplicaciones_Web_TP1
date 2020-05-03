@@ -12,7 +12,8 @@ class ProductosEnCarrito extends Component {
       <Card>
         <Card.Content>
           <Card.Header>
-            Carrito de Compras
+            <p>Carrito de Compras ({this.props.total})</p>
+            <p>Total: ${this.props.sum} </p>
             <Icon size="large"  />
           </Card.Header>
         </Card.Content>
@@ -38,7 +39,7 @@ class ProductosEnCarrito extends Component {
             compact
             size="medium"
             onClick={this.props.enCompraAbierta}
-            >Proceder al Pago ({this.props.total} productos)
+            >Proceder al Pago de {this.props.total} productos
           </Button>
         </Card.Content>
       </Card>

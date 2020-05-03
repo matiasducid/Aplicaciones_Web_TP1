@@ -14,7 +14,8 @@ function Carrito(props){
         <Feed.Content>
           <Feed.Date content={props.nombre} />
           <Feed.Summary>
-            $ {props.total} ({props.cantidad} productos)
+            <p>Subtotal: $ {props.total} </p>
+            <p>Cantidad: {props.cantidad}</p>
           </Feed.Summary>
           <IconButton edge="end" aria-label="delete" onClick={props.enQuitarProducto}>
             <RemoveIcon/>

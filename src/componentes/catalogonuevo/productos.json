@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "nombre": "Sillon rinconero cleopatra 3 cuerpos con puff",
+        "nombre": "Sillon rinconero cleopatra",
         "imagen": "https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/16b1-e5bfca62d9f5c58c7615132912837842-320-0.jpg",
-        "precio": 53887.89,
+        "precio": 53887,
         "detalles": "Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.",
         "marca": "Corfa",
         "stock": 5
@@ -12,7 +12,7 @@
         "id": 2,
         "nombre": "Futon Jimmy Amarillo",
         "imagen": "https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/16b1-e5bfca62d9f5c58c7615132912837842-320-0.jpg",
-        "precio": 13938.20,
+        "precio": 13938,
         "detalles": "Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.",
         "marca": "Soyere",
         "stock": 6
