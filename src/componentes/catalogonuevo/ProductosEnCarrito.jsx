@@ -18,14 +18,15 @@ class ProductosEnCarrito extends Component {
         </Card.Content>
         <Card.Content>
         {this.props.items.map(p => {
-          return (
-            
+          return (           
           <Carrito
             key={p.id}
             img={p.img}
             nombre={p.nombre}
             total={p.total}
             cantidad={p.cantidad}
+            enQuitarProducto={() => this.props.enQuitarProducto(p.id)}
+            enIncrementarProducto={() => this.props.enIncrementarProducto(p.id)}
           />
           )
         })}

@@ -153,6 +153,8 @@ x
               items={this.state.carrito}
               total={this.state.total}
               enCompraAbierta={this.handlerCompraAbierta}
+              enQuitarProducto={this.handlerQuitarProducto}
+              enIncrementarProducto={this.handleGuardarProducto}
             />
             {this.renderCompraAbierta()}
           </Grid.Column>

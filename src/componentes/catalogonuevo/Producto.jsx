@@ -28,18 +28,6 @@ function Producto(props) {
           Agregar al carrito
         </Button>
       </Card.Content>
-      <Card.Content extra>
-        <Button.Group floated='right'>
-          <Button
-            compact
-            onClick={props.enIncrementarProducto}
-            >+</Button>
-          <Button
-            compact
-            onClick={props.enQuitarProducto}
-            >-</Button>
-        </Button.Group>
-      </Card.Content>
     </Card>
   )
 }
