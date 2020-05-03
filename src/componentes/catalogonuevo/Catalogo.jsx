@@ -42,9 +42,9 @@ class Catalogo extends Component {
   }
 
   sumTotal(array) {
-    var sum = 0
-    array.forEach(producto => sum += producto.total)
-    this.setState({sum: sum})
+    var suma = 0
+    array.forEach(producto => suma += producto.total )
+    this.setState({sum: suma})
   }
 
   handlerAgregarProducto(indexCarrito, indexProducto){
@@ -68,8 +68,12 @@ class Catalogo extends Component {
     let indexCarrito = this.state.carrito.findIndex(x => x.id === carrito.id)
 
     var copiaState = Object.assign({}, this.state);
-    if(copiaState.carrito[indexCarrito].total === copiaState.carrito[indexCarrito].precio ){
-      indexCarrito !== -1 && copiaState.carrito.splice( indexCarrito, 1 );
+    if(copiaState.carrito[indexCarrito].total === copiaState.carrito[indexCarrito].precio ){ //significa que es el ultimo de ese producto
+      copiaState.sum -= copiaState.carrito[indexCarrito].precio
+      indexCarrito !== -1 && copiaState.carrito.splice( indexCarrito, 1 ); 
+      if(copiaState.carrito.length === 0){
+        copiaState.total -= 1
+      }
       copiaState.products[indexProducto].stock += 1
       this.setState(copiaState)
       alert('El producto se quito del carrito de compras')
@@ -105,7 +109,10 @@ class Catalogo extends Component {
       var copiaState = Object.assign({}, this.state);
       copiaState.products[indexProducto].stock -= 1
       this.sumProducts(copiaState.carrito)
-      this.sumTotal(copiaState.carrito)
+      //this.sumTotal(copiaState.carrito) funciona raro cuando llamamos a esta función
+      //es necesario hacerlo a mano la primera vez. 
+      copiaState.sum += copiaState.products[indexProducto].precio
+      this.setState({sum: copiaState.sum})
       this.setState({
         carrito: this.state.carrito.concat([productoCarrrito]),
         copiaState
@@ -128,8 +135,7 @@ class Catalogo extends Component {
       )
     }
   }
-x
-
+  
   render() {
     const divStyle = {
       background: '#DDB9B9',
@@ -144,8 +150,6 @@ x
             <ProductosEnCatalogo
               products={this.state.products}
               enGuardarProducto={this.handleGuardarProducto}
-              enIncrementarProducto={this.handleGuardarProducto}
-              enQuitarProducto={this.handlerQuitarProducto}
             />
           </Grid.Column>
           <Grid.Column width={4}>
