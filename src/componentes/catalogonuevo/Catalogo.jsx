@@ -7,7 +7,7 @@ import HeaderMuebleria from '../menu/Header'
 import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import style from './App.css'
-
+import prodJson from './productos.json'
 
 class Catalogo extends Component {
   constructor(props) {
@@ -16,108 +16,7 @@ class Catalogo extends Component {
       compraAbierta: false,
       total: 0, //total de la compra
       sum: 0,   //total de la suma de un mismo producto
-      products: [
-        {
-          id: 1,
-          nombre: 'Sillon rinconero cleopatra 3 cuerpos con puff',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/16b1-e5bfca62d9f5c58c7615132912837842-320-0.jpg',
-          precio: 53887.89,
-          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
-          marca: 'Corfa',
-          stock: 5,
-        },
-        {
-          id: 2,
-          nombre: 'Futon Jimmy Amarillo',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/pi13656-889252-yellow5-d8e138590df90e31d615336571207705-320-0.jpg',
-          precio: 13938.20,
-          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
-          marca: 'Soyere',
-          stock: 6,
-        },
-        {
-          id: 3,
-          nombre: 'Mesa Mykonos rectangular',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/mesa-mykonos1-a89a907071cea801c615351243853395-320-0.png',
-          precio: 24725,
-          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
-          marca: 'Fujifilim',
-          stock: 2,
-        },
-        {
-          id: 4,
-          nombre: 'Respaldo Ottilia',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/produto-133_cabeceira_cc-alamo1-9346c668590e2f9b7d15253511322857-320-0.png',
-          precio: 10000,
-          detalles: 'Compra Protegida, recibe el producto que esperabas o te devolvemos tu dinero.',
-          marca: 'Canyio',
-          stock: 6,
-        },
-        {
-          id: 5,
-          nombre: 'Desayunador Firenze ',
-          imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2020/04/FIRENZE.jpg',
-          precio: 3285,
-          marca: 'Amazon',
-          stock: 10,
-        },
-        {
-          id: 6,
-          nombre: 'Leila Banqueta',
-          imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2018/10/LEILA-BANQUETA.jpg',
-          precio: 27333,
-          marca: 'Olympus',
-          stock: 4,
-        },
-        {
-          id: 7,
-          nombre: 'Sofa Cama',
-          imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/ODENSE1_4baef199-b9f6-44a1-90a6-e85de3894da1_700x.jpg?v=1568221467',
-          precio: 32000,
-          marca: 'Odense',
-          stock: 2,
-        },
-        {
-          id: 8,
-          nombre: 'Esquinero ',
-          imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/JACKSON_ESQ_700x.jpg?v=1568051926',
-          precio: 62190,
-          marca: 'Jackson',
-          stock: 4,
-        },
-        {
-          id: 9,
-          nombre: 'Sofa 1 cuerpo',
-          imagen: 'https://cdn.shopify.com/s/files/1/0049/0330/5265/products/JUANA_1_CPO_700x.jpg?v=1575924615',
-          precio: 50399,
-          marca: 'Juana',
-          stock: 3,
-        },
-        {
-          id: 10,
-          nombre: 'Comoda',
-          imagen: 'https://amoblartecomodoro.com/wp-content/uploads/2019/07/COMODA-DL-250.jpg',
-          precio: 15200,
-          marca: 'DL250',
-          stock: 4,
-        },
-        {
-          id: 11,
-          nombre: 'Juego de dormitorio',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/juego-dormitorio-portofino-nogal-42447b691892da200414699122547155-1024-10241-4951650e766a5fc2c015132928286779-320-0.jpg',
-          precio: 86789,
-          marca: 'Olympus',
-          stock: 3,
-        },
-        {
-          id: 12,
-          nombre: 'Mesa Ratona ',
-          imagen: 'https://d26lpennugtm8s.cloudfront.net/stores/281/365/products/28e38da2d811d0ec1bbe6e403a672a360e5b127ffbc53ec225pimgpsh_fullsize_distr1-2b6062abf428f691c115132936255208-320-0.jpg',
-          precio: 32699,
-          marca: 'Narbona',
-          stock: 10,
-        }
-      ],
+      products: prodJson,
       carrito: [],
     }
     //Enlazo las funciones dentro del constructor
