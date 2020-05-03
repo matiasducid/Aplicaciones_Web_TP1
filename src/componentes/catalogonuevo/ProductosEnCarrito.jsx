@@ -6,9 +6,6 @@ import Carrito from './Carrito'
 //clase que representa a todos los productos que estan en el carrito
 
 class ProductosEnCarrito extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return(

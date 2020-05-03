@@ -12,10 +12,10 @@ class Header extends React.Component {
                 <span className="icon-menu" id="btn-menu"></span>
                 <nav className="nav" id="nav">
                     <ul className="menu">
-                        <li className="menu__item" className={this.getNavLinkClass("/")}>
+                        <li className="menu__item">
                             <NavLink to="/" className="menu__link">Inicio </NavLink>
                         </li>
-                        <li className="menu__item" className={this.getNavLinkClass("/catalogonuevo")}>
+                        <li className="menu__item">
                             <NavLink to="/catalogonuevo" className="menu__link">Catalogo </NavLink>
                         </li>
                         <li className="menu__item">
