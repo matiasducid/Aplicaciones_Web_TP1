@@ -22,17 +22,17 @@ class Home extends React.Component {
                         <article className="info__columna">
                             <img src="img/img2.jpg" alt="" className="info__img"/>
                             <h2 className="info__titulo">Comedor</h2>
-                            <p className="info__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, obcaecati unde? Neque non eius ut?</p>
+                            <p className="info__txt">Poseemos una diversa cantidad de mesas redondas, rectangulares y cuadradas para su comedor, también distintos tipos de sillas y distintos una variedad de muebles para su comedor.</p>
                         </article>
                         <article className="info__columna">
                             <img src="img/img3.jpg" alt="" className="info__img"/>
                             <h2 className="info__titulo">Dormitorio</h2>
-                            <p className="info__txt">Itaque, quis reprehenderit ipsam id enim omnis veritatis, autem quasi neque eligendi, eius error suscipit?</p>
+                            <p className="info__txt">En esta sección podrá encontrar una variedad de camas, sommiers, armarios, escritorios y todo tipo de muebles para su dormitorio.</p>
                         </article>
                         <article className="info__columna">
                             <img src="img/img7.jpg" alt="" className="info__img"/>
                             <h2 className="info__titulo">Living</h2>
-                            <p className="info__txt">Ea dolor quos ipsa unde, est repudiandae, beatae labore sit a aliquid autem? Ipsam, natus.</p>
+                            <p className="info__txt">Tenemos una diversa cantidad de sillones de multiples cuerpos, de un cuerpo, mesas ratonas y mas artículos para tu living.</p>
                         </article>
                     </section> 
                     <section className="productos">
@@ -41,28 +41,28 @@ class Home extends React.Component {
                             <img src="img/img8.jpg" alt="" className="productos__img"/>
                             <div className="productos__descripcion">
                                 <h3 className="productos_titulo">Productos en Oferta</h3>
-                                <p className="productos__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, id.</p>
+                                <p className="productos__txt">Productos de calidad en ofertas muy accesibles, clikee aquí.</p>
                             </div>
                         </div>
                         <div className="productos__columna">
                             <img src="img/img9.jpg" alt="" className="productos__img"/>
                             <div className="productos__descripcion">
                                 <h3 className="productos_titulo">Productos mas vendidos</h3>
-                                <p className="productos__txt">Quae dolore adipisci vel ratione iste saepe voluptatem praesentium eligendi.</p>
+                                <p className="productos__txt">Para poder ver los productos más vendidos en este mes acceda aquí.</p>
                             </div>
                         </div>
                         <div className="productos__columna">
                             <img src="img/img5.jpg" alt="" className="productos__img"/>
                             <div className="productos__descripcion">
                                 <h3 className="productos_titulo">Productos destacados</h3>
-                                <p className="productos__txt">Facere iste itaque repudiandae ullam quia molestiae provident accusamus illum?</p>
+                                <p className="productos__txt">Para ver los productos en los que la mayoría de los clientes muestran interés clikee aquí.</p>
                             </div>
                         </div>
                         <div className="productos__columna">
                             <img src="img/garantia.jpg" alt="" className="productos__img"/>
                             <div className="productos__descripcion">
                                 <h3 className="productos_titulo">Productos Outside</h3>
-                                <p className="productos__txt">Ex earum odit magni? Hic magnam porro repudiandae nisi et.</p>
+                                <p className="productos__txt">Todos los productos fuera de temporada o con algún daño los puede encontrar en esta sección.</p>
                             </div>
                         </div>
                     </section>
