@@ -108,7 +108,10 @@ class Catalogo extends Component {
     }else{
       var copiaState = Object.assign({}, this.state);
       copiaState.products[indexProducto].stock -= 1
-      this.sumProducts(copiaState.carrito)
+      //this.sumProducts(copiaState.carrito) funciona raro cuando llamamos a esta funcion
+      //es necesario hacerlo a mano la primera vez.
+      copiaState.total += 1
+      this.setState({total: copiaState.total})
       //this.sumTotal(copiaState.carrito) funciona raro cuando llamamos a esta función
       //es necesario hacerlo a mano la primera vez. 
       copiaState.sum += copiaState.products[indexProducto].precio
