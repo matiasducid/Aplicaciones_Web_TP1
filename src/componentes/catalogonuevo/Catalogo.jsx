@@ -70,10 +70,11 @@ class Catalogo extends Component {
     var copiaState = Object.assign({}, this.state);
     if(copiaState.carrito[indexCarrito].total === copiaState.carrito[indexCarrito].precio ){ //significa que es el ultimo de ese producto
       copiaState.sum -= copiaState.carrito[indexCarrito].precio
+      copiaState.total -= 1
       indexCarrito !== -1 && copiaState.carrito.splice( indexCarrito, 1 ); 
-      if(copiaState.carrito.length === 0){
+      /* if(copiaState.carrito.length === 0){ //haciendolo asi siempre quedaba un producto de mas
         copiaState.total -= 1
-      }
+      } */
       copiaState.products[indexProducto].stock += 1
       this.setState(copiaState)
       alert('El producto se quito del carrito de compras')
@@ -145,13 +146,13 @@ class Catalogo extends Component {
       <HeaderMuebleria/>
       <Banner/>
         <Grid className="fondo">
-          <Grid.Column width={12} className="catalogo">
+          <Grid.Column width={11} className="catalogo">
             <ProductosEnCatalogo
               products={this.state.products}
               enGuardarProducto={this.handleGuardarProducto}
             />
           </Grid.Column>
-          <Grid.Column width={3} className="grillaCarrito">
+          <Grid.Column width={4} className="grillaCarrito">
             <ProductosEnCarrito
               items={this.state.carrito}
               total={this.state.total}
