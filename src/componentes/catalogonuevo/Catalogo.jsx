@@ -146,13 +146,14 @@ class Catalogo extends Component {
       <HeaderMuebleria/>
       <Banner/>
         <Grid className="fondo">
-          <Grid.Column width={11} className="catalogo">
+          <Grid.Column className="grillaCatalogo col-5 col-sm-8" >
             <ProductosEnCatalogo
               products={this.state.products}
               enGuardarProducto={this.handleGuardarProducto}
+              className="grillaCatalogo"
             />
           </Grid.Column>
-          <Grid.Column width={4} className="grillaCarrito">
+          <Grid.Column className="grillaCarrito col-5 col-sm-3">
             <ProductosEnCarrito
               items={this.state.carrito}
               total={this.state.total}

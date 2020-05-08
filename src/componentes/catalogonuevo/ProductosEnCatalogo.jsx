@@ -6,11 +6,11 @@ import Producto from './Producto'
 function ProductosEnCatalogo(props) {
   return (
     <Segment>
-      <Grid>
-        <Grid.Row columns={4}>
+      <Grid className="grid">
+        <Grid.Row columns={4} className="">
           {props.products.map(p => {
             return (
-              <Grid.Column key={p.id}>
+              <Grid.Column key={p.id} className="producto col-12 col-sm-3">
                 <Producto
                   key={p.id}
                   nombre={p.nombre}
