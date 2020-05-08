@@ -1,13 +1,33 @@
 .root {
-  margin-top: 40px;
-  margin-left: 520px;
-  background-color: brown;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: blue;
+  background: black;
 }
 
-.container {
-  background-color: brown
-}
-
-.container{
+.fondo{
   background: rosybrown;
+  margin: 0;
+}
+
+.catalogo{
+  margin-left: 5px;
+  padding-right: 2px;
+}
+
+.cardCarrito{
+  margin: 0px;
+  margin-right: 0px;
+  width: 280px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.grillaCarrito{
+  margin: 0px;
+}
+
+.imagenCatalogo{
+  display:block;
+  margin:auto;
 }

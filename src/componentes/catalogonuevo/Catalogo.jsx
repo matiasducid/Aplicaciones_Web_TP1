@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Grid} from 'semantic-ui-react'
+import {Grid} from 'semantic-ui-react'
 import ProductosEnCatalogo from './ProductosEnCatalogo'
 import ProductosEnCarrito from './ProductosEnCarrito'
 import Compra from './Compra'
 import HeaderMuebleria from '../menu/Header'
 import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
-import style from './App.css'
+import './App.css'
 import prodJson from './productos.json'
 
 class Catalogo extends Component {
@@ -140,22 +140,18 @@ class Catalogo extends Component {
   }
   
   render() {
-    const divStyle = {
-      background: '#DDB9B9',
-    };
     return (      
       <>
       <HeaderMuebleria/>
       <Banner/>
-      <Container style={style.root}>
-        <Grid style={divStyle}>
-          <Grid.Column width={12}>
+        <Grid className="fondo">
+          <Grid.Column width={12} className="catalogo">
             <ProductosEnCatalogo
               products={this.state.products}
               enGuardarProducto={this.handleGuardarProducto}
             />
           </Grid.Column>
-          <Grid.Column width={4}>
+          <Grid.Column width={3} className="grillaCarrito">
             <ProductosEnCarrito
               items={this.state.carrito}
               total={this.state.total}
@@ -167,7 +163,6 @@ class Catalogo extends Component {
             {this.renderCompraAbierta()}
           </Grid.Column>
         </Grid>      
-      </Container>
       <Footer/>
       </>
     )

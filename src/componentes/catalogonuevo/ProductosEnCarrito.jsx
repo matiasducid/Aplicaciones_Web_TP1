@@ -9,7 +9,7 @@ class ProductosEnCarrito extends Component {
 
   render() {
     return(
-      <Card>
+      <Card className="cardCarrito">
         <Card.Content>
           <Card.Header>
             <p>Carrito de Compras ({this.props.total})</p>

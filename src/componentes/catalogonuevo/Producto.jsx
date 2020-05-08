@@ -4,8 +4,8 @@ import { Card, Image, Label, Button } from 'semantic-ui-react'
 //Funcion que renderiza cada producto en la pantalla
 function Producto(props) {
   return(
-    <Card style={{ marginTop: 15 }}>
-      <Image size="small" src={props.imagen}  />
+    <Card style={{ marginTop: 15, marginLeft: 15}}>
+      <Image size="small" src={props.imagen} className="imagenCatalogo" />
       <Card.Content>
         <Card.Header style={{fontSize: 15}}>{props.nombre}</Card.Header>
         <Card.Meta>
