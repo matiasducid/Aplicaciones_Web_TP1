@@ -35,7 +35,12 @@ body{
     width: 98%;
 }
 
-/*EStilos del  header*/
+.main{
+  background: #F3E7E7;
+  margin-top: 60px;
+}
+
+/*Estilos del  header*/
 a:hover, a:active, a:focus, a:focus-within, a:visited{
     text-decoration: none;
   }
@@ -133,6 +138,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
     color: #000;
     padding: 15px;
     margin-bottom: 30px;
+    margin-top: -60px;
 }
 
 /*Estilos del curso*/
