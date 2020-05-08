@@ -7,17 +7,18 @@
 
 .fondo{
   background: #F3E7E7;
-  margin: 0;
+  margin-top: -10px;
 }
 
 .catalogo{
-  margin-left: 5px;
+  margin-left: 30px;
   padding-right: 2px;
+  display: block;
 }
 
 .cardCarrito{
   margin: 0px;
-  margin-right: 0px;
+  margin-right: -10px;
   width: 280px;
   padding-left: 2px;
   padding-right: 2px;
@@ -48,9 +49,11 @@
   background: #6f8c8b;
 }
 
+.cardProducto > * {
+  flex: 1;
+}
+
  /*Estilos del resposive*/
  @media(min-width:480px){
-   .cardCarrito{
 
-   }
  }

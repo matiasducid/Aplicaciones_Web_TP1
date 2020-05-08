@@ -14,7 +14,6 @@ function Compra(props) {
         </Statistic>
         <Button
           basic
-          color='green'
           compact
           size="medium"
           floated='right'

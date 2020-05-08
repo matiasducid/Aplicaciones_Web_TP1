@@ -35,7 +35,6 @@ class ProductosEnCarrito extends Component {
         <Card.Content extra>
           <Button
             basic
-            color='green'
             compact
             size="medium"
             onClick={this.props.enCompraAbierta}

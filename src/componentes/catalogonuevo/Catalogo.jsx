@@ -8,7 +8,6 @@ import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
-import Media from 'react-media';
 
 class Catalogo extends Component {
   constructor(props) {
@@ -146,12 +145,6 @@ class Catalogo extends Component {
       <>
       <HeaderMuebleria/>
       <Banner/>
-      <Media  queries={{
-          small: "(max-width: 599px)",
-          medium: "(min-width: 600px) and (max-width: 1199px)",
-          large: "(min-width: 1200px)"
-        }}>
-
         <Grid className="fondo">
           <Grid.Column width={11} className="catalogo">
             <ProductosEnCatalogo
@@ -171,7 +164,6 @@ class Catalogo extends Component {
             {this.renderCompraAbierta()}
           </Grid.Column>
         </Grid>  
-      </Media>
       <Footer/>
       </>
     )
