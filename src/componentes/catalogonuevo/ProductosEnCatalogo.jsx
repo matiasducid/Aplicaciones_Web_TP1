@@ -7,10 +7,10 @@ function ProductosEnCatalogo(props) {
   return (
     <Segment>
       <Grid className="grid">
-        <Grid.Row columns={4} className="">
+        <Grid.Row className="">
           {props.products.map(p => {
             return (
-              <Grid.Column key={p.id} className="producto col-12 col-sm-3">
+              <Grid.Column key={p.id} className="producto col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 <Producto
                   key={p.id}
                   nombre={p.nombre}

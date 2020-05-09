@@ -8,6 +8,7 @@ import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
+import { Hidden } from '@material-ui/core';
 
 class Catalogo extends Component {
   constructor(props) {
@@ -146,24 +147,26 @@ class Catalogo extends Component {
       <HeaderMuebleria/>
       <Banner/>
         <Grid className="fondo">
-          <Grid.Column className="grillaCatalogo col-5 col-sm-8" >
+          <Grid.Column className="grillaCatalogo col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8" >
             <ProductosEnCatalogo
               products={this.state.products}
               enGuardarProducto={this.handleGuardarProducto}
               className="grillaCatalogo"
             />
           </Grid.Column>
-          <Grid.Column className="grillaCarrito col-5 col-sm-3">
-            <ProductosEnCarrito
-              items={this.state.carrito}
-              total={this.state.total}
-              sum = {this.state.sum}
-              enCompraAbierta={this.handlerCompraAbierta}
-              enQuitarProducto={this.handlerQuitarProducto}
-              enIncrementarProducto={this.handleGuardarProducto}
-            />
-            {this.renderCompraAbierta()}
-          </Grid.Column>
+          <Hidden smDown>
+            <Grid.Column className="grillaCarrito col-xs-2 col-sm-3 col-md-3 col-lg-3">
+              <ProductosEnCarrito
+                items={this.state.carrito}
+                total={this.state.total}
+                sum = {this.state.sum}
+                enCompraAbierta={this.handlerCompraAbierta}
+                enQuitarProducto={this.handlerQuitarProducto}
+                enIncrementarProducto={this.handleGuardarProducto}
+              />
+              {this.renderCompraAbierta()}
+            </Grid.Column>
+          </Hidden>
         </Grid>  
       <Footer/>
       </>
