@@ -32,7 +32,7 @@ class Header extends React.Component {
                             <NavLink to="/catalogonuevo" className="menu__link">Catalogo </NavLink>
                         </li>
                         <li className="menu__item">
-                            <NavLink to="" className="menu__link">Carrito </NavLink>
+                            <NavLink to="/CarroGrande" className="menu__link">Carrito </NavLink>
                         </li>
                         <li className="menu__item">
                             <NavLink to="" className="menu__link">Usuario </NavLink>
