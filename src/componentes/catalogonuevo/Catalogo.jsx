@@ -8,7 +8,6 @@ import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
-import carritoJson from './carritoJson.json'
 
 class Catalogo extends Component {
   constructor(props) {
