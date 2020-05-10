@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Card, Icon, Button} from 'semantic-ui-react'
-
+import { Card, Button} from 'semantic-ui-react'
+import { Hidden } from '@material-ui/core';
+import './Carro.css'
 import Carrito from './Carrito'
 
 //clase que representa a todos los productos que estan en el carrito
@@ -10,13 +11,21 @@ class ProductosEnCarrito extends Component {
   render() {
     return(
       <Card className="cardCarrito">
-        <Card.Content>
-          <Card.Header>
-            <p>Carrito de Compras ({this.props.total})</p>
-            <p>Total: ${this.props.sum} </p>
-            <Icon size="large"  />
-          </Card.Header>
+        <Card.Content> 
+          <Hidden smDown>
+              <Card.Header style={{fontSize: 18}}>
+                <p>Carrito de Compras ({this.props.total})</p>
+                <p>Total: ${this.props.sum} </p>
+              </Card.Header>  
+          </Hidden>   
+          <Hidden mdUp>
+              <Card.Header style={{fontSize: 14}}>
+                <p>Carrito de Compras ({this.props.total})</p>
+                <p>Total: ${this.props.sum} </p>
+              </Card.Header>  
+          </Hidden>    
         </Card.Content>
+
         <Card.Content>
         {this.props.items.map(p => {
           return (           

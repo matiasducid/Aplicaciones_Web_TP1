@@ -9,7 +9,6 @@ import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
 import carritoJson from './carritoJson.json'
-import { Hidden } from '@material-ui/core';
 
 class Catalogo extends Component {
   constructor(props) {
@@ -41,14 +40,12 @@ class Catalogo extends Component {
     var total = 0
     array.forEach(producto => total += producto.cantidad)
     this.setState({total: total})
-    localStorage.setItem("total", this.state.total);
   }
 
   sumTotal(array) {
     var suma = 0
     array.forEach(producto => suma += producto.total )
     this.setState({sum: suma})
-    localStorage.setItem("sum", this.state.sum);
   }
 
   handlerAgregarProducto(indexCarrito, indexProducto){
@@ -60,7 +57,6 @@ class Catalogo extends Component {
       this.setState(copiaState)
       this.sumProducts(copiaState.carrito)
       this.sumTotal(copiaState.carrito)
-      localStorage.setItem("Carrito", this.state.carrito);
     } else {
       alert('Producto sin stock')
     }
@@ -82,7 +78,6 @@ class Catalogo extends Component {
       } */
       copiaState.products[indexProducto].stock += 1
       this.setState(copiaState)
-      localStorage.setItem("Carrito", this.state.carrito);
       alert('El producto se quito del carrito de compras')
     } else {
       copiaState.carrito[indexCarrito].total -= copiaState.carrito[indexCarrito].precio
@@ -91,7 +86,6 @@ class Catalogo extends Component {
       copiaState.total -= 1
       copiaState.sum -= copiaState.carrito[indexCarrito].precio
       this.setState(copiaState)
-      localStorage.setItem("Carrito", this.state.carrito);
     }
   }
 
@@ -128,7 +122,6 @@ class Catalogo extends Component {
         carrito: this.state.carrito.concat([productoCarrrito]),
         copiaState
       })
-      localStorage.setItem("Carrito", this.state.carrito);
     }
   }
 
@@ -154,15 +147,7 @@ class Catalogo extends Component {
       <HeaderMuebleria/>
       <Banner/>
         <Grid className="fondo">
-          <Grid.Column className="grillaCatalogo col-8 col-xs-8 col-sm-8 col-md-8 col-lg-8" >
-            <ProductosEnCatalogo
-              products={this.state.products}
-              enGuardarProducto={this.handleGuardarProducto}
-              className="grillaCatalogo"
-            />
-          </Grid.Column>
-          <Hidden smDown>
-            <Grid.Column className="grillaCarrito col-xs-2 col-sm-3 col-md-3 col-lg-3">
+            <Grid.Column className="grillaCarrito col-4 col-xs-4 col-sm-3 col-md-3 col-lg-3">
               <ProductosEnCarrito
                 items={this.state.carrito}
                 total={this.state.total}
@@ -173,8 +158,13 @@ class Catalogo extends Component {
               /> 
               {this.renderCompraAbierta()}
             </Grid.Column>
-            {console.log("Carrito", localStorage.getItem("Carrito"))}
-          </Hidden>
+          <Grid.Column className="grillaCatalogo col-6 col-xs-6 col-sm-8 col-md-8 col-lg-8" >
+            <ProductosEnCatalogo
+              products={this.state.products}
+              enGuardarProducto={this.handleGuardarProducto}
+              className="grillaCatalogo"
+            />
+          </Grid.Column>
         </Grid> 
       <Footer/>
       </>

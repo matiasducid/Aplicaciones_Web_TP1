@@ -1,0 +1,10 @@
+
+.position-fixed{
+    height: auto;
+    width: auto;
+    padding-top: 60px
+}
+
+.fixed-top{
+    padding-top: 60px 
+}
