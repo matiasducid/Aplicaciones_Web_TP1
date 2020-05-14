@@ -11,20 +11,19 @@
 }
 
 .grillaCatalogo{
-  margin-left: 30px;
+  margin-left: 20px;
   padding-right: 2px;
 }
 
 .cardCarrito{
-  margin: 0px;
-  margin-right: -10px;
+  margin-left: 10px;
   width: 280px;
   padding-left: 2px;
   padding-right: 2px;
 }
 
 .grillaCarrito{
-  margin: 0px;
+  margin-left:25px;
 }
 
 .imagenCatalogo{
