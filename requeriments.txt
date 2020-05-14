@@ -16,3 +16,9 @@ npm install @material-ui/core
 yarn add semantic-ui-react
 
 npm i -D eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
+
+npm install react-bootstrap bootstrap
+
+npm install --save react-media
+
+npm install react-responsive --save
