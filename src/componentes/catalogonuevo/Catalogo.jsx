@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import {Grid} from 'semantic-ui-react'
+import {Grid, Button} from 'semantic-ui-react'
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import ProductosEnCatalogo from './ProductosEnCatalogo'
 import ProductosEnCarrito from './ProductosEnCarrito'
 import Compra from './Compra'
@@ -8,6 +10,7 @@ import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
+import { animateScroll as scroll} from 'react-scroll';
 
 class Catalogo extends Component {
   constructor(props) {
@@ -139,6 +142,10 @@ class Catalogo extends Component {
       )
     }
   }
+
+  onClickUp = () => {
+    scroll.scrollToTop();
+  }
   
   render() {
     return (      
@@ -164,6 +171,11 @@ class Catalogo extends Component {
               className="grillaCatalogo"
             />
           </Grid.Column>
+          <Button className="ir-arriba btn btn-default" onClick={this.onClickUp}>
+          <IconButton color="primary" aria-label="upload picture" component="span">
+            <ShoppingCartIcon />
+          </IconButton>
+          </Button>
         </Grid> 
       <Footer/>
       </>

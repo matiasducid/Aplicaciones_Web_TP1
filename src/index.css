@@ -107,10 +107,6 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
   background: #DDB9B9;
 }
 
-.select {
-  background: #DDB9B9;
-}
-
 .mostrar{
     left: 0px;
 }
@@ -181,7 +177,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
     color: #000;
     padding: 10px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 19px;
   }
   
   .footer .social [class^="icon-"] {

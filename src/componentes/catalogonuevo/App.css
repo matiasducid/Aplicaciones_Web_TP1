@@ -24,6 +24,7 @@
 
 .grillaCarrito{
   margin-left:25px;
+  z-index: 2;
 }
 
 .imagenCatalogo{
@@ -45,4 +46,17 @@
 
 .productoDescripcion{
   background: #6f8c8b;
+}
+
+.ir-arriba {
+	display:none;
+	padding:30px;
+	background:#024959;
+	font-size:70px;
+	color:#fff;
+	cursor:pointer;
+  position: sticky;
+	bottom:114px;
+  left:25px;
+  z-index: 0;
 }
