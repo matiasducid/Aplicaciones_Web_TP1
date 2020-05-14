@@ -1,0 +1,12 @@
+[
+    {
+        "user":"Marcos Sanchez",
+        "pass":"123456",
+        "compras":[]
+    },
+    {
+        "user":"Camila Rodriguez",
+        "pass":"654321",
+        "compras":[]
+    }
+]

@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink, withRouter}  from 'react-router-dom'
-
+import Usuario from '../usuarios/usuarios.jsx'
 class Header extends React.Component {
     //esto es algo que estaba probando
     getNavLinkClass = (path) => {
@@ -32,7 +32,7 @@ class Header extends React.Component {
                             <NavLink to="/catalogonuevo" className="menu__link">Catalogo </NavLink>
                         </li>
                         <li className="menu__item">
-                            <NavLink to="" className="menu__link">Usuario </NavLink>
+                        <Usuario/>                          
                         </li>
                     </ul>
                 </nav>

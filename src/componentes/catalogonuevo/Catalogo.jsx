@@ -92,7 +92,7 @@ class Catalogo extends Component {
     //busco el producto en mi lista de productos
     let producto = this.state.products.find(elemProducto => elemProducto.id === productId);
     let indexProducto = this.state.products.findIndex(x => x.id === producto.id)
-
+    console.log("LOG------ index: ",indexProducto);
     var productoCarrrito = {
       id: producto.id,
       nombre: producto.nombre,
@@ -122,6 +122,8 @@ class Catalogo extends Component {
         copiaState
       })
     }
+    console.log("LOG--------- carrito: ",this.state.carrito);
+    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito)); //Guardo la lista de productos en carrito en el localStorage
   }
 
   handlerCompraAbierta(event) {
@@ -131,6 +133,7 @@ class Catalogo extends Component {
 
   renderCompraAbierta() {
     if (this.state.compraAbierta) {
+      console.log("LOG------ clikeaste pagar");
       return (
         <Compra
           sum={this.state.sum}
@@ -138,6 +141,7 @@ class Catalogo extends Component {
         />
       )
     }
+    console.log("LOG------- se pago: ",this.state.sum);
   }
   
   render() {
