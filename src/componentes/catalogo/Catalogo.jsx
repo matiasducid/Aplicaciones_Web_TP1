@@ -63,9 +63,6 @@ class Catalogo extends Component {
       copiaState.sum -= copiaState.carrito[indexCarrito].precio
       copiaState.total -= 1
       indexCarrito !== -1 && copiaState.carrito.splice( indexCarrito, 1 ); 
-      /* if(copiaState.carrito.length === 0){ //haciendolo asi siempre quedaba un producto de mas
-        copiaState.total -= 1
-      } */
       copiaState.products[indexProducto].stock += 1
       this.setState(copiaState)
       alert('El producto se quito del carrito de compras')
@@ -101,12 +98,8 @@ class Catalogo extends Component {
     }else{
       var copiaState = Object.assign({}, this.state);
       copiaState.products[indexProducto].stock -= 1
-      //this.sumProducts(copiaState.carrito) funciona raro cuando llamamos a esta funcion
-      //es necesario hacerlo a mano la primera vez.
       copiaState.total += 1
       this.setState({total: copiaState.total})
-      //this.sumTotal(copiaState.carrito) funciona raro cuando llamamos a esta función
-      //es necesario hacerlo a mano la primera vez. 
       copiaState.sum += copiaState.products[indexProducto].precio
       this.setState({sum: copiaState.sum})
       this.setState({
