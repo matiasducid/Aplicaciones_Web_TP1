@@ -32,6 +32,7 @@ class Catalogo extends Component {
   }
 
   handlerVaciarCarrito() {
+    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito));
     this.setState({
       carrito: [],
       sum: 0,
@@ -144,7 +145,6 @@ class Catalogo extends Component {
         />
       )
     }
-    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito));
   }
 
 
