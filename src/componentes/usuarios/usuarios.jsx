@@ -27,7 +27,7 @@ class Usuario extends Component{
                 <Icon name='user' className="float-right"/>
             </button>
             <div className="dropdown-content">
-                <NavLink to="/comprasRealizadas">Compras Realizadas</NavLink>
+                <NavLink to="/comprasRealizadas">Ultima Compra</NavLink>
             </div>
             </div>
         )

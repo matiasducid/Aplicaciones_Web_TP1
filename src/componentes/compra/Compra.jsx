@@ -15,9 +15,6 @@ class Compra extends Component {
         var stringUltimaCompra = localStorage.getItem('productosEnCarrito');
         var ultimaCompra;
         ultimaCompra = JSON.parse(stringUltimaCompra);
-        console.log("LOG-------- ultima compra: ",ultimaCompra);
-        console.log("LOG-------- primer item: ",ultimaCompra[0].cantidad);
-
         this.state={
             usuario : primerUsuario.user,
             compras : primerUsuario.compras,
