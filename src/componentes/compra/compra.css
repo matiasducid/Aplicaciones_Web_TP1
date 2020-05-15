@@ -1,0 +1,18 @@
+
+.titulo{
+    border-bottom: 5px;
+    border-color: black;
+    border-width: 100%;
+}
+
+.derecha{
+    text-align: justify;
+}
+
+.izquierda{
+    text-align: justify;
+}
+
+.grillaCompra{
+    margin-right: 50px;
+}

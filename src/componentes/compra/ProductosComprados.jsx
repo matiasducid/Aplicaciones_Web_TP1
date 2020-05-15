@@ -1,6 +1,8 @@
 import React from 'react'
-import { Segment, Grid } from 'semantic-ui-react'
+import { Segment, Grid} from 'semantic-ui-react'
 import Producto from './Producto'
+
+import './compra.css'
 
 //funcion que renderiza todos los productos comprados
 function ProductosComprados(props) {
@@ -10,8 +12,17 @@ function ProductosComprados(props) {
         }
   return (
     <Segment>
-      <Grid className="grid">
-      <b><big>Productos Comprados:</big></b>
+      <Grid className="grillaCompra grid" style={{marginRight: 20}}>
+        <Grid.Column width={11} className="titulo" style={{fontSize: 28}}>
+        <p className="izquierda">Productos Comprados:</p>
+        <hr/>
+        </Grid.Column>
+        <Grid.Column width={5} className="titulo" style={{fontSize: 26}}>
+        <b className="derecha"> Total pagado: ${suma} </b>
+        <hr/>
+        </Grid.Column>
+      </Grid>
+      <Grid>
         <Grid.Row className="">
           {props.products.map(p => {
             return (
@@ -27,8 +38,7 @@ function ProductosComprados(props) {
               </Grid.Column>
             )
           })}
-        </Grid.Row>
-        <b>Total pagado: {suma} </b>
+        </Grid.Row>        
       </Grid>
     </Segment>
   )

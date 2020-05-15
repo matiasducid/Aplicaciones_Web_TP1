@@ -11,7 +11,7 @@ import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
 import { animateScroll as scroll} from 'react-scroll';
-import { Element, scroller } from 'react-scroll';
+import { Element} from 'react-scroll';
 
 class Catalogo extends Component {
   constructor(props) {
