@@ -35,7 +35,7 @@ class Catalogo extends Component {
       carrito: [],
       sum: 0,
       total: 0
-    });
+    });   
   }
 
   sumProducts(array) {
@@ -92,6 +92,7 @@ class Catalogo extends Component {
   }
 
   handleGuardarProducto(productId) {
+    
     //busco el producto en mi lista de productos
     let producto = this.state.products.find(elemProducto => elemProducto.id === productId);
     let indexProducto = this.state.products.findIndex(x => x.id === producto.id)
@@ -108,7 +109,7 @@ class Catalogo extends Component {
     var existe = this.state.carrito.find(elemProducto => elemProducto.id === productId)
     if (undefined !== existe && existe !== null) {
       let indexCarrito = this.state.carrito.findIndex(x => x.id === existe.id)
-      this.handlerAgregarProducto(indexCarrito, indexProducto)
+      this.handlerAgregarProducto(indexCarrito, indexProducto)    
     }else{
       var copiaState = Object.assign({}, this.state);
       copiaState.products[indexProducto].stock -= 1
@@ -125,7 +126,7 @@ class Catalogo extends Component {
         copiaState
       })
     }
-    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito))
+
   }
 
   handlerCompraAbierta(event) {
@@ -142,6 +143,7 @@ class Catalogo extends Component {
         />
       )
     }
+    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito));
   }
 
   onClickUp = () => {
