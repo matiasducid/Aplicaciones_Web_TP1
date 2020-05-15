@@ -125,6 +125,7 @@ class Catalogo extends Component {
         copiaState
       })
     }
+    localStorage.setItem('productosEnCarrito', JSON.stringify(this.state.carrito))
   }
 
   handlerCompraAbierta(event) {
