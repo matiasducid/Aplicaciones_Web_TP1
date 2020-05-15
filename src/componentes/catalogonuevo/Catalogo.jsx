@@ -11,6 +11,7 @@ import Banner from '../menu/Banner'
 import './App.css'
 import prodJson from './productos.json'
 import { animateScroll as scroll} from 'react-scroll';
+import { Element, scroller } from 'react-scroll';
 
 class Catalogo extends Component {
   constructor(props) {
@@ -144,9 +145,14 @@ class Catalogo extends Component {
     }
   }
 
-  onClickUp = () => {
-    scroll.scrollToTop();
+
+  handleClick(){
+    var btnMenu = document.getElementById('btnIr');
+    btnMenu.addEventListener('click', function(){
+        scroll.scrollToTop();
+    })   
   }
+  
   
   render() {
     return (      
@@ -155,6 +161,7 @@ class Catalogo extends Component {
       <Banner/>
         <Grid className="fondo">
             <Grid.Column className="grillaCarrito col-4 col-xs-4 col-sm-3 col-md-3 col-lg-3">
+              <Element name="hastaCarrito">
               <ProductosEnCarrito
                 items={this.state.carrito}
                 total={this.state.total}
@@ -163,6 +170,7 @@ class Catalogo extends Component {
                 enQuitarProducto={this.handlerQuitarProducto}
                 enIncrementarProducto={this.handleGuardarProducto}
               /> 
+              </Element>
               {this.renderCompraAbierta()}
             </Grid.Column>
           <Grid.Column className="grillaCatalogo col-6 col-xs-6 col-sm-8 col-md-8 col-lg-8" >
@@ -172,7 +180,7 @@ class Catalogo extends Component {
               className="grillaCatalogo"
             />
           </Grid.Column>
-          <Button className="ir-arriba btn btn-default" onClick={this.onClickUp}>
+          <Button id="btnIr" className="ir-arriba btn btn-default" onClick={this.handleClick}>
           <IconButton color="primary" aria-label="upload picture" component="span">
             <ShoppingCartIcon />
           </IconButton>
