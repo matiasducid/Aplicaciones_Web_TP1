@@ -26,14 +26,14 @@ class Header extends React.Component {
                 <nav className="nav" id="nav">
                     <ul className="menu">
                         <li className="menu__item">
-                            <NavLink to="/" className="menu__link">Inicio </NavLink>
+                            <NavLink  id="linkInicio" to="/" className="menu__link">Inicio </NavLink>
                         </li>
                         <li className="menu__item">
                             <NavLink to="/catalogonuevo" className="menu__link">Catalogo </NavLink>
                         </li>
-                        <li className="menu__item">
+                        
                         <Usuario/>                          
-                        </li>
+
                     </ul>
                 </nav>
             </div>

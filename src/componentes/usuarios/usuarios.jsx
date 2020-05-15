@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import usuariosJson from './usuarios.json'
 import {NavLink}  from 'react-router-dom'
-
-import { TextField } from '@material-ui/core';
-import { MenuItem } from '@material-ui/core';
 import { Icon } from 'semantic-ui-react'
 
+import './usuarios.css'
 
 class Usuario extends Component{
     constructor(){
@@ -13,21 +11,25 @@ class Usuario extends Component{
         var primerUsuario = usuariosJson[0]
         this.state={
             usuario : primerUsuario.user,
-            compras : primerUsuario.compras
+            compras : primerUsuario.compras,
         }
     }
+
     function(nuevaCompra){
         this.state.compras.concat(nuevaCompra)
     }
-
+    
     render(){
-        return(
-            
-            <TextField id="select"  value="0" select>
-            <MenuItem value="0" >{this.state.usuario}<Icon name='user' className="float-right"/></MenuItem>
-            <MenuItem value="1"><NavLink to="/comprasRealizadas" className="menu__link">Compras Realizadas</NavLink></MenuItem>
-          </TextField>
-
+        return(  
+            <div className="dropdown">
+            <button className="dropbtn">
+                {this.state.usuario} 
+                <Icon name='user' className="float-right"/>
+            </button>
+            <div className="dropdown-content">
+                <NavLink to="/comprasRealizadas">Compras Realizadas</NavLink>
+            </div>
+            </div>
         )
     }
 }

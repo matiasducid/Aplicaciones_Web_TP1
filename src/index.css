@@ -40,6 +40,10 @@ body{
   margin-top: 60px;
 }
 
+li .menu__link {
+  text-decoration: none;
+}
+
 /*Estilos del  header*/
 a:hover, a:active, a:focus, a:focus-within, a:visited{
     text-decoration: none;
@@ -99,17 +103,22 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
 }
 
 .menu__link:hover{
-    background: #6f8c8b;
-    color: #e5e8e8;
-}
-
+  background: #6f8c8b;
+  color: #e5e8e8;
+  }
+  
 .menu__link:focus{
+  background: #DDB9B9;
+}
+  
+.select {
   background: #DDB9B9;
 }
 
 .mostrar{
     left: 0px;
 }
+
 
 /* Estilos del Banner*/
 .banner{
