@@ -105,10 +105,12 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
 .menu__link:hover{
   background: #6f8c8b;
   color: #e5e8e8;
+  text-decoration: none;
   }
   
 .menu__link:focus{
   background: #DDB9B9;
+  text-decoration: none;
 }
   
 .select {
@@ -303,6 +305,7 @@ a:hover, a:active, a:focus, a:focus-within, a:visited{
     .menu__link {
       background: none;
       font-size: 20px;
+      text-decoration: none;
     }
     .select {
       color: #000;
