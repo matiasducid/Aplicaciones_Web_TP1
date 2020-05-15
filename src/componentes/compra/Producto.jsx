@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image, Label, Button } from 'semantic-ui-react'
+import { Card, Image, Label } from 'semantic-ui-react'
 
 //Funcion que renderiza cada producto en la pantalla
 function Producto(props) {

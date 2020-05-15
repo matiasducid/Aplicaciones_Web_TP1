@@ -4,7 +4,7 @@ import Footer from '../footer/Footer'
 import Banner from '../menu/Banner'
 import usuariosJson from '../usuarios/usuarios.json'
 
-import {Segment, Grid} from 'semantic-ui-react'
+import {Grid} from 'semantic-ui-react'
 import ProductosComprados from './ProductosComprados'
 
 class Compra extends Component {
@@ -14,7 +14,6 @@ class Compra extends Component {
         var primerUsuario = usuariosJson[0];
         var stringUltimaCompra = localStorage.getItem('productosEnCarrito');
         var ultimaCompra;
-        var string = "";
         ultimaCompra = JSON.parse(stringUltimaCompra);
         console.log("LOG-------- ultima compra: ",ultimaCompra);
         console.log("LOG-------- primer item: ",ultimaCompra[0].cantidad);
