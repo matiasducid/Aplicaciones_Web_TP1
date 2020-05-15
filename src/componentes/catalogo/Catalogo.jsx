@@ -52,20 +52,6 @@ class Catalogo extends Component {
     this.setState({sum: suma})
   }
 
-  handlerAgregarProducto(indexCarrito, indexProducto){
-    var copiaState = Object.assign({}, this.state);
-    if (copiaState.products[indexProducto].stock !== 0) {
-      copiaState.carrito[indexCarrito].total += copiaState.carrito[indexCarrito].precio
-      copiaState.carrito[indexCarrito].cantidad += 1
-      copiaState.products[indexProducto].stock -= 1
-      this.setState(copiaState)
-      this.sumProducts(copiaState.carrito)
-      this.sumTotal(copiaState.carrito)
-    } else {
-      alert('Producto sin stock')
-    }
-  }
-
   handlerQuitarProducto(productId) {
     let producto = this.state.products.find(elemProducto => elemProducto.id === productId);
     let indexProducto = this.state.products.findIndex(x => x.id === producto.id)
@@ -131,6 +117,20 @@ class Catalogo extends Component {
 
   }
 
+  handlerAgregarProducto(indexCarrito, indexProducto){
+    var copiaState = Object.assign({}, this.state);
+    if (copiaState.products[indexProducto].stock !== 0) {
+      copiaState.carrito[indexCarrito].total += copiaState.carrito[indexCarrito].precio
+      copiaState.carrito[indexCarrito].cantidad += 1
+      copiaState.products[indexProducto].stock -= 1
+      this.setState(copiaState)
+      this.sumProducts(copiaState.carrito)
+      this.sumTotal(copiaState.carrito)
+    } else {
+      alert('Producto sin stock')
+    }
+  }
+
   handlerCompraAbierta(event) {
     event.preventDefault()
     this.setState({ compraAbierta: true })
@@ -146,7 +146,6 @@ class Catalogo extends Component {
       )
     }
   }
-
 
   handleClick(){
     var btnMenu = document.getElementById('btnIr');

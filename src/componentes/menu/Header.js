@@ -29,7 +29,7 @@ class Header extends React.Component {
                             <NavLink  id="linkInicio" to="/" className="menu__link">Inicio </NavLink>
                         </li>
                         <li className="menu__item">
-                            <NavLink to="/catalogonuevo" className="menu__link">Catalogo </NavLink>
+                            <NavLink to="/catalogo" className="menu__link">Catalogo </NavLink>
                         </li>
                         
                         <Usuario/>                          

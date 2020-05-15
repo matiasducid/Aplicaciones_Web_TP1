@@ -7,7 +7,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 //Llamo a los componentes
 import Home from './componentes/home/Home'
-import Catalogo from './componentes/catalogonuevo/Catalogo'
+import Catalogo from './componentes/catalogo/Catalogo'
 import Compra from './componentes/compra/Compra'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de Bootstrap 4 
@@ -21,7 +21,7 @@ ReactDOM.render(
     <Switch>
         {/* Páginas */}
         <Route exact path='/' component={Home} />
-        <Route path='/catalogonuevo' component={Catalogo} />
+        <Route path='/catalogo' component={Catalogo} />
         <Route path='/comprasRealizadas' component={Compra}/>
     </Switch>
   </div>
